@@ -8,7 +8,7 @@ Tested on Microsoft VisualStudio(msvc) 2013 Community Edition.
 
 # Note
 
- ROS_IP and ROS_MASTER_URI must be set to run example application(main.cpp).
+ Environment varialbes(ROS_IP and ROS_MASTER_URI) must be set to run example application(main.cpp).
 
 #Dependency
  
