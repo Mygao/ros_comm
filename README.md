@@ -1,6 +1,6 @@
-# ros_comm for Visual Studio
+# ROS ros_comm for Visual Studio
 
-ros_comm for Windows Visual Studio IDE environment. 
+ROS ros_comm for Windows Visual Studio IDE environment. 
 
 Original ros_comm package sources are come from Indigo release and had few modifications.
 
