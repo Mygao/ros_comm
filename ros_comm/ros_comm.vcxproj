@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CFDB0B39-9AC6-4D91-A378-9BE33E105604}</ProjectGuid>
+    <RootNamespace>ros_comm</RootNamespace>
+    <ProjectName>ros_comm</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT_DIR);$(SolutionDir)\src\roscpp_core\cpp_common\include;$(SolutionDir)\src\ros_comm\clients\roscpp\include;$(SolutionDir)\src\ros_comm\tools\rosconsole\include;$(SolutionDir)\src\roscpp_core\rostime\include;$(SolutionDir)\src\roscpp_core\roscpp_serialization\include;$(SolutionDir)\src\console_bridge\include;$(SolutionDir)\src\ros_comm\utilities\xmlrpcpp\include;$(SolutionDir)\src\roscpp_core\roscpp_traits\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CONSOLE_BRIDGE_STATIC;_WINSOCK_DEPRECATED_NO_WARNINGS;_MBCS;_WINDOWS;WIN32;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT_DIR)\lib32-msvc-12.0;$(SolutionDir)$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;console_bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>E:\libraries\boost_1_61_0_prebuilt_32bit\lib32-msvc-12.0;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT_DIR);$(SolutionDir)\src\roscpp_core\cpp_common\include;$(SolutionDir)\src\ros_comm\clients\roscpp\include;$(SolutionDir)\src\ros_comm\tools\rosconsole\include;$(SolutionDir)\src\roscpp_core\rostime\include;$(SolutionDir)\src\roscpp_core\roscpp_serialization\include;$(SolutionDir)\src\console_bridge\include;$(SolutionDir)\src\ros_comm\utilities\xmlrpcpp\include;$(SolutionDir)\src\roscpp_core\roscpp_traits\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CONSOLE_BRIDGE_STATIC;_WINSOCK_DEPRECATED_NO_WARNINGS;_MBCS;_WINDOWS;WIN32;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(BOOST_ROOT_DIR)\lib32-msvc-12.0;$(SolutionDir)$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;console_bridge.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\git\ros_comm\clients\roscpp\include\roscpp\GetLoggers.h" />
+    <ClInclude Include="..\..\..\git\ros_comm\clients\roscpp\include\roscpp\Logger.h" />
+    <ClInclude Include="..\..\..\git\ros_comm\clients\roscpp\include\ros\transport\transport.h" />
+    <ClInclude Include="..\..\..\git\ros_comm\clients\roscpp\include\ros\transport\transport_tcp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\git\roscpp_core\cpp_common\src\header.cpp" />
+    <ClCompile Include="..\..\..\git\roscpp_core\roscpp_serialization\src\serialization.cpp" />
+    <ClCompile Include="..\..\..\git\roscpp_core\rostime\src\duration.cpp" />
+    <ClCompile Include="..\..\..\git\roscpp_core\rostime\src\rate.cpp" />
+    <ClCompile Include="..\..\..\git\roscpp_core\rostime\src\time.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\callback_queue.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\common.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\connection.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\connection_manager.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\file_log.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\init.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\internal_timer_manager.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\intraprocess_publisher_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\intraprocess_subscriber_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\io.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\master.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\message_deserializer.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\names.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\network.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\node_handle.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\param.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\poll_manager.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\poll_set.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\publication.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\publisher.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\publisher_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\rosout_appender.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\service.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\service_client.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\service_client_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\service_manager.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\service_publication.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\service_server.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\service_server_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\single_subscriber_publisher.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\spinner.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\statistics.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\subscriber.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\subscriber_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\subscription.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\subscription_queue.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\this_node.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\timer.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\topic_manager.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\transport\transport.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\transport\transport_tcp.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\transport\transport_udp.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\transport_publisher_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\transport_subscriber_link.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\wall_timer.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\clients\roscpp\src\libros\xmlrpc_manager.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\tools\rosconsole\src\rosconsole\impl\rosconsole_print.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\tools\rosconsole\src\rosconsole\rosconsole.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\tools\rosconsole\src\rosconsole\rosconsole_backend.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcClient.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcDispatch.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcServer.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcServerConnection.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcServerMethod.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcSocket.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcSource.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcUtil.cpp" />
+    <ClCompile Include="..\..\..\git\ros_comm\utilities\xmlrpcpp\src\XmlRpcValue.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

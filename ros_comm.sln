@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ros_comm", "ros_comm\ros_comm.vcxproj", "{CFDB0B39-9AC6-4D91-A378-9BE33E105604}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C77BB142-09FE-4843-BE12-9CBF8E10EC55} = {C77BB142-09FE-4843-BE12-9CBF8E10EC55}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "console_bridge", "console_bridge\console_bridge.vcxproj", "{C77BB142-09FE-4843-BE12-9CBF8E10EC55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFDB0B39-9AC6-4D91-A378-9BE33E105604}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CFDB0B39-9AC6-4D91-A378-9BE33E105604}.Debug|Win32.Build.0 = Debug|Win32
+		{CFDB0B39-9AC6-4D91-A378-9BE33E105604}.Release|Win32.ActiveCfg = Release|Win32
+		{CFDB0B39-9AC6-4D91-A378-9BE33E105604}.Release|Win32.Build.0 = Release|Win32
+		{C77BB142-09FE-4843-BE12-9CBF8E10EC55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C77BB142-09FE-4843-BE12-9CBF8E10EC55}.Debug|Win32.Build.0 = Debug|Win32
+		{C77BB142-09FE-4843-BE12-9CBF8E10EC55}.Release|Win32.ActiveCfg = Release|Win32
+		{C77BB142-09FE-4843-BE12-9CBF8E10EC55}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
