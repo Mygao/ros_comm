@@ -6,6 +6,10 @@ Original ros_comm package sources are come from Indigo release and had few modif
 
 Tested on Microsoft VisualStudio(msvc) 2013 Community Edition.
 
+# Note
+
+ ROS_IP and ROS_MASTER_URI must be set to run example application(main.cpp).
+
 #Dependency
  
  Boost library(1.58+) must be installed.
