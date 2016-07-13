@@ -17,4 +17,4 @@ Tested on Microsoft VisualStudio(msvc) 2013 Community Edition.
  
  Boost library(1.58+) must be installed.
  
- Environment variable BOOST_ROOT_DIR where Boost is installed must be set.
+ Environment variables BOOST_ROOT_DIR(where Boost is installed including headers) and BOOST_LIB_DIR (where Boost binaries exists) must be set.
