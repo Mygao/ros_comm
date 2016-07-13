@@ -6,7 +6,7 @@ Please be notified that this is made for bridging some Windows applications with
 
 Original ros_comm package sources are come from Kinetic release and had few modifications.
 
-Because the message code generator was not ported(and other tools either), some message header files are copied from the package of ROS Indigo on Ubuntu 14.04.
+Because the message code generator was not ported(and other tools either), some message header files are copied from the package of ROS Indigo on Ubuntu 14.04 and nav_msg from Kinetic on Ubuntu 16.04.
 (You need to import message headers matching your application.)
 
 Tested on Microsoft VisualStudio(msvc) 2013 Community Edition with Boost 1.61.
